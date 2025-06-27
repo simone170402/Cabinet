@@ -1,0 +1,122 @@
+footer {
+  text-align: center;
+}
+
+.footer-part-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+  background-color: rgb(1, 1, 15);
+  color: #fff;
+  border-bottom: 1px solid #444;
+
+  .footer-column1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+
+    &:not(:last-child) {
+      border-right: 1px solid #444;
+    }
+
+    img {
+      max-width: 20px;
+      margin-right: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: gold;
+    }
+
+    p {
+      line-height: 1.4;
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer-part-2 {
+  padding: 20px;
+  background-color: rgb(1, 1, 15);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+
+  .footer-column {
+    padding: 20px;
+    text-align: left;
+
+    h3 {
+      color: #fff;
+      font-size: 25px;
+      margin-bottom: 30px;
+      text-decoration: underline double gold;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      padding-left: 20px;
+      position: relative;
+      transition: color 0.3s;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background-color: gold;
+      }
+
+      &:hover,
+      &.active {
+        color: gold;
+      }
+    }
+
+    img.logo {
+      width: 175px;
+      height: 175px;
+    }
+  }
+
+  .search-container {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+
+    .search-input {
+      flex-grow: 1;
+      border: none;
+      padding: 5px;
+      border-radius: 20px;
+      outline: none;
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      border-radius: 50%;
+      transform: scale(1.8);
+    }
+  }
+}
+
+.footer-part-3 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(1, 1, 15);
+  color: #fff;
+}
